@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwind -i ./src/input.css -o ./build/css/style.css",
-    "watch": "tailwind -i ./src/input.css -o ./build/css/style.css --watch",
+    "build": "tailwindcss -i ./input.css -o ./css/style.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/style.css --watch",
     "prettier": "npx prettier --write **/*.html"
   },
   "keywords": [],
