@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
     <title>Rocket IO</title>
   </head>
   <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
@@ -14,26 +15,52 @@
         </h1>
         <div>
           <button
-            id="mobile-open-button"
-            class="text-3xl md:hidden focus:outline-none cursor-pointer">
+            id="harmburger-btn"
+            class="text-3xl md:hidden focus:outline-none cursor-pointer"
+          >
             &#9776;
           </button>
 
           <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+            <a href="#" class="hover:opacity-90">Home</a>
             <a href="#rockets" class="hover:opacity-90">Our Apps</a>
             <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
             <a href="#contact" class="hover:opacity-90">Contact Us</a>
           </nav>
         </div>
       </section>
+      <section
+        id="mobile-menu"
+        class="absolute top-0 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden"
+      >
+        <button class="text-8xl self-end px-6">&times;</button>
+        <nav
+          class="flex flex-col min-h-screen items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#rockets" class="w-full text-center py-6 hover:opacity-90"
+            >Our Apps</a
+          >
+          <a
+            href="#testimonials"
+            class="w-full text-center py-6 hover:opacity-90"
+            >Testimonials</a
+          >
+          <a href="#contact" class="w-full text-center py-6 hover:opacity-90"
+            >Contact Us</a
+          >
+        </nav>
+      </section>
     </header>
     <main class="max-w-6xl mx-auto">
       <section
         id="hero"
-        class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
+        class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height"
+      >
         <article class="sm:w-1/2">
           <h2
-            class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white mb-10">
+            class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white mb-10"
+          >
             We build
             <span class="text-violet-700 dark:text-amber-400"
               >Amazing AI-Powered
@@ -41,14 +68,16 @@
             apps...
           </h2>
           <p
-            class="max-w-md text-2xl text-center sm:text-left text-slate-700 dark:text-slate-400 mb-8">
+            class="max-w-md text-2xl text-center sm:text-left text-slate-700 dark:text-slate-400 mb-8"
+          >
             At Rocket.IO we build next generation apps today. From AI to
             Blockchain, we've got you covered...
           </p>
           <div class="flex justify-center sm:justify-start">
             <a
               href="#contact"
-              class="bg-indigo-700 hover:bg-indigo-600 active:bg-indigo-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none text-2xl text-center">
+              class="bg-indigo-700 hover:bg-indigo-600 active:bg-indigo-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none text-2xl text-center"
+            >
               Contact Us
             </a>
           </div>
@@ -60,68 +89,83 @@
 
       <section
         id="rockets"
-        class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+        class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
+      >
         <h2
-          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
+        >
           Our Apps
         </h2>
         <ul
-          class="list-none mx-auto my-12 flex flex-col items-center sm:flex-row gap-8">
+          class="list-none mx-auto my-12 flex flex-col items-center sm:flex-row gap-8"
+        >
           <li
-            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:bg-black dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl">
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:bg-black dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl"
+          >
             <img
               src="./img/rocketride.png"
               alt="rocket ride image"
-              class="w-1/2 mb-6" />
+              class="w-1/2 mb-6"
+            />
 
             <h3 class="text-3xl text-center text-slate-900 dark:text-white">
               Innovative
             </h3>
             <p
-              class="hidden sm:block text-3xl mt-2 text-center text-slate-500 dark:text-slate-400">
+              class="hidden sm:block text-3xl mt-2 text-center text-slate-500 dark:text-slate-400"
+            >
               €
             </p>
             <p
-              class="sm:hidden text-2xl text-center text-slate-500 dark:text-slate-400 mt-2">
+              class="sm:hidden text-2xl text-center text-slate-500 dark:text-slate-400 mt-2"
+            >
               Next Gen
             </p>
           </li>
           <li
-            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:bg-black dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl">
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:bg-black dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl"
+          >
             <img
               src="./img/rocketman.png"
               alt="rocket man image"
-              class="w-1/2 mb-6" />
+              class="w-1/2 mb-6"
+            />
 
             <h3 class="text-3xl text-center text-slate-900 dark:text-white">
               AI Powered
             </h3>
             <p
-              class="hidden sm:block text-3xl mt-2 text-center text-slate-500 dark:text-slate-400">
+              class="hidden sm:block text-3xl mt-2 text-center text-slate-500 dark:text-slate-400"
+            >
               €€
             </p>
             <p
-              class="sm:hidden text-2xl text-center text-slate-500 dark:text-slate-400 mt-2">
+              class="sm:hidden text-2xl text-center text-slate-500 dark:text-slate-400 mt-2"
+            >
               Best Seller!
             </p>
           </li>
 
           <li
-            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:bg-black dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl">
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:bg-black dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl"
+          >
             <img
               src="./img/rocketlaunch.png"
               alt="rocket launch image"
-              class="w-1/2 mb-6" />
+              class="w-1/2 mb-6"
+            />
 
             <h3 class="text-3xl text-center text-slate-900 dark:text-white">
               High Performance
             </h3>
             <p
-              class="hidden sm:block text-3xl mt-2 text-center text-slate-500 dark:text-slate-400">
+              class="hidden sm:block text-3xl mt-2 text-center text-slate-500 dark:text-slate-400"
+            >
               €€€
             </p>
             <p
-              class="sm:hidden text-2xl text-center text-slate-500 dark:text-slate-400 mt-2">
+              class="sm:hidden text-2xl text-center text-slate-500 dark:text-slate-400 mt-2"
+            >
               Top Rated!
             </p>
           </li>
@@ -132,51 +176,62 @@
 
       <section
         id="testimonials"
-        class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+        class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
+      >
         <h2
-          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
+        >
           Testimonials
         </h2>
         <figure class="my-12">
           <blockquote
-            class="bg-violet-900 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+            class="bg-violet-900 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+          >
             <p
-              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:text-white before:left-0 before:top-0 before:text-9xl before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:text-white after:right-0 after:-bottom-20 after:text-9xl after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-5">
+              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:text-white before:left-0 before:top-0 before:text-9xl before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:text-white after:right-0 after:-bottom-20 after:text-9xl after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-5"
+            >
               Using Rocket.IO has been a game changer for our business. We've
               seen a <span class="italic">300% increase </span> in sales since
               we started using it!
             </p>
           </blockquote>
           <figcaption
-            class="italic text xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+            class="italic text xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400"
+          >
             &#8212; CEO, ALL2Code GmbH
           </figcaption>
         </figure>
         <figure class="my-12">
           <blockquote
-            class="bg-violet-900 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+            class="bg-violet-900 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+          >
             <p
-              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:text-white before:left-0 before:top-0 before:text-9xl before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:text-white after:right-0 after:-bottom-20 after:text-9xl after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-5">
+              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:text-white before:left-0 before:top-0 before:text-9xl before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:text-white after:right-0 after:-bottom-20 after:text-9xl after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-5"
+            >
               Business has never been better since we started using Rocket.IO.
               Our customers love it and we love it too! It's a win-win!
             </p>
           </blockquote>
           <figcaption
-            class="italic text xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+            class="italic text xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400"
+          >
             &#8212; Regional Manager, CurryCoders GmbH
           </figcaption>
         </figure>
         <figure class="my-12">
           <blockquote
-            class="bg-violet-900 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+            class="bg-violet-900 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+          >
             <p
-              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:text-white before:left-0 before:top-0 before:text-9xl before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:text-white after:right-0 after:-bottom-20 after:text-9xl after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-5">
+              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:text-white before:left-0 before:top-0 before:text-9xl before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:text-white after:right-0 after:-bottom-20 after:text-9xl after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-5"
+            >
               Rocket.IO is the best! I can't believe I didn't start using it
               sooner! Life changing! I'm a Rocket.IO customer for life!
             </p>
           </blockquote>
           <figcaption
-            class="italic text xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+            class="italic text xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400"
+          >
             &#8212; Max Mustermann, Genius
           </figcaption>
         </figure>
@@ -186,14 +241,17 @@
 
       <section
         id="contact"
-        class="p-6 my-12 widescreen:section-min-height tallscreen:section-min-height scroll-mt-20">
+        class="p-6 my-12 widescreen:section-min-height tallscreen:section-min-height scroll-mt-20"
+      >
         <h2
-          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
+        >
           Contact Us
         </h2>
         <form
           action=""
-          class="max-w-6xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
+          class="max-w-6xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4"
+        >
           <label for="subject">Subject:</label>
           <input
             type="text"
@@ -203,7 +261,8 @@
             minlength="3"
             maxlength="60"
             placeholder="Your Subject"
-            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none" />
+            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+          />
           <label for="message">Message:</label>
           <textarea
             name="message"
@@ -212,9 +271,11 @@
             rows="10"
             placeholder="Your Message"
             required
-            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"></textarea>
+            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+          ></textarea>
           <button
-            class="bg-violet-700 hover:bg-violet-600 active:bg-violet-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none">
+            class="bg-violet-700 hover:bg-violet-600 active:bg-violet-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none"
+          >
             Submit
           </button>
         </form>
@@ -222,7 +283,8 @@
     </main>
     <footer class="bg-violet-900 text-white text-xl" id="footer">
       <section
-        class="max-w-6xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+        class="max-w-6xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between"
+      >
         <address>
           <h2>Rocket.IO GmbH</h2>
 
