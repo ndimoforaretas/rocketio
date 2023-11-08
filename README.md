@@ -1,30 +1,18 @@
-# 07.11.2023 - CSS Frameworks- Tailwind CSS
+# Rocket IO - Tailwind CSS
 
-## 1. What is Tailwind CSS?
+This is a simple simple landing page for a fictional company called Rocket IO. It is built using Tailwind CSS, HTML and JavaScript.
 
-- It is a `utility-first` CSS framework that is it provides `low-level utility classes` that let you build completely custom designs.
-- Other frameworks like Bootstrap, Foundation, etc. provide pre-built components that you can use to build your website. They are known as `component-first` frameworks.
-- In Tailwind, there is therefore no pre-built components. You have to build them yourself using the utility classes provided by Tailwind.
+The Original layout idea and inspiration is from this youtube video: [Tailwind CSS Introduction, Basics & Guided Tutorial by Dave Gray](https://www.youtube.com/watch?v=pYaamz6AyvU).
 
-### What are utility classes?
+- I added a few touches of my own like a dark mode toggle button and a few color touches.
+- I found the project very useful for complete beginners to Tailwind CSS.
 
-- Utility classes are classes that are used to style elements. They are usually `very specific` and are used to apply `a single style` to an element.
-- For example, if you want to apply a `margin` to an element, you can use the `m-4` class. This will apply a `margin of 1rem` to the element.
-
-Advantages of Tailwind CSS:
-
-- The class names are named according to what they do.
-- the class names are very short and easy to remember.
-- You can build any design you want.
-- Building and testing layouts is very fast.
-- Tailwind has conditional class naming for breakpoints as well as states like hover, focus, etc. For example, if you want to apply a `margin of 1rem` on `small screens` and `2rem` on `large screens`, you can use the `sm:m-4 lg:m-8` class.
-
-## Basic Setup
+## Basic Setup from Scratch
 
 - In vs code,
-  - install the Tailwind CSS IntelliSense extension.
-  - install the PostCSS Language Support extension.
-- In the terminal,
+  - install the `Tailwind CSS IntelliSense` extension.
+  - install the `PostCSS Language Support` extension.
+- In the terminal in the project folder (preferably in vs code),
   - run `npm init -y` to initialize the project.
   - run `npm install -D tailwindcss` to install Tailwind CSS.
   - run `npx tailwindcss init` to create a `tailwind.config.js` file.
@@ -48,8 +36,7 @@ module.exports = {
 {
   "scripts": {
     "build": "tailwind -i ./input.css -o ./css/style.css",
-    "watch": "tailwind -i ./input.css -o ./css/style.css --watch",
-    "prettier": "npx prettier --write **/*.html"
+    "watch": "tailwind -i ./input.css -o ./css/style.css --watch"
   }
 }
 ```
@@ -60,4 +47,20 @@ module.exports = {
 node_modules
 ```
 
-strg + alt + e
+## Setup using this repository
+
+- Clone the repository.
+- In the terminal in the project folder (preferably in vs code),
+  - run `npm install` to install the dependencies.
+  - run `npm run watch` to start the development server
+  - start the `live server` in vs code.
+
+## Useful Links
+
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Tailwind CSS Introduction, Basics & Guided Tutorial by Dave Gray on Youtube](https://www.youtube.com/watch?v=pYaamz6AyvU).
+
+## License
+
+This project is licensed under the MIT License. Free to use for your personal portfolio projects.
+Happy Coding!
