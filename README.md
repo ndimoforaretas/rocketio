@@ -1,11 +1,19 @@
-# Rocket IO - Tailwind CSS
+# 🚀Rocket IO - Tailwind CSS
+
+![Rocket IO dark screenshot](img/rocketio-dark.png)
+
+![Rocket IO light screenshot](img/rocketio-light.png)
+
+---
 
 This is a simple simple landing page for a fictional company called Rocket IO. It is built using Tailwind CSS, HTML and JavaScript.
 
 The Original layout idea and inspiration is from this youtube video: [Tailwind CSS Introduction, Basics & Guided Tutorial by Dave Gray](https://www.youtube.com/watch?v=pYaamz6AyvU).
 
 - I added a few touches of my own like a dark mode toggle button and a few color touches.
-- I found the project very useful for complete beginners to Tailwind CSS.
+- I found the project to be fun and easy to understand for complete beginners in Tailwind CSS.
+
+---
 
 ## Basic Setup from Scratch
 
@@ -46,6 +54,8 @@ module.exports = {
 ```gitignore
 node_modules
 ```
+
+---
 
 ## Setup using this repository
 
