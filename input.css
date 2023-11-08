@@ -7,3 +7,15 @@
     min-height: calc(100vh - 68px);
   }
 }
+
+.display-none {
+  @apply hidden;
+}
+
+.transition-theme {
+  transition: background-color 0.5s;
+}
+
+.icon-transition {
+  transition: opacity 0.5s;
+}

@@ -59,3 +59,5 @@ module.exports = {
 ```gitignore
 node_modules
 ```
+
+strg + alt + e
