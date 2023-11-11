@@ -3,7 +3,7 @@
   "short_name": "Rocket.io PWA",
   "description": "A simple simple PWA landing page for a fictional company called Rocket IO. Built using Tailwind CSS, HTML and JavaScript.",
   "id": "/?source=rocket_homescreen",
-  "start_url": "/?rocket_homescreen",
+  "start_url": "index.html",
   "scope": "/",
   "icons": [
     {
