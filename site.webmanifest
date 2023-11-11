@@ -1,0 +1,49 @@
+{
+  "name": "Rocket.io Progressive Web App",
+  "short_name": "Rocket.io PWA",
+  "description": "A simple simple PWA landing page for a fictional company called Rocket IO. Built using Tailwind CSS, HTML and JavaScript.",
+  "id": "/?source=rocket_homescreen",
+  "start_url": "/?rocket_homescreen",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#4c1d95",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "screenshots": [
+    {
+      "src": "/img/rocketio-light.png",
+      "sizes": "1902x1004",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/img/rocketio-dark.png",
+      "sizes": "1902x1004",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/img/rocket-mobile-dark.png",
+      "sizes": "377x667",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/rocket-mobile-light.png",
+      "sizes": "377x667",
+      "type": "image/png"
+    }
+  ]
+}
