@@ -1,5 +1,7 @@
 # 🚀Rocket IO - Tailwind CSS
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fe677d54-f857-4bca-ab56-cc09e78ea4a5/deploy-status)](https://app.netlify.com/sites/rocket-service/deploys)
+
 ![Rocket IO dark screenshot](img/rocketio-dark.png)
 
 ![Rocket IO light screenshot](img/rocketio-light.png)
